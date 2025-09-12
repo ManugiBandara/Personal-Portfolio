@@ -187,7 +187,7 @@ header ul a:hover{
 }
 
 .skills-video{
-    height: 900px;
+    height: auto;
     mix-blend-mode:lighten;
 }
 
@@ -375,7 +375,7 @@ header ul a:hover{
     position: relative;
     width: 80%;
     height: 150vh;
-    margin-top: 200px;
+    margin-top: 10px;
     margin-bottom: 200px;
 }
 
@@ -968,7 +968,6 @@ header ul a:hover{
     }
 }
 
-/*MOBILE RESPONSIVE*/
 
 @media screen and (max-width: 700px){
     header {
@@ -1004,7 +1003,7 @@ header ul a:hover{
     }
 
     .scroll-down{
-        bottom: 5%;
+        bottom: 2%;
     }
 
     .hero-info h1{
@@ -1023,35 +1022,17 @@ header ul a:hover{
     }
 
     .info-cards{
-        grid-template-columns: auto;
+        display: flex;
+        flex-direction: column;
     }
 
-    .card{
-    display: flex;
-    align-items:flex-start;
-    justify-content: center;
-    position: relative;
-    width: auto;
-    height: 70vh;
-    overflow: hidden;
-    border: 1px solid gray;
-    background-color: #5990d320;
-    border-radius: 20px;
-    transition: 0.5s;
-}
-
-.card h1{
-    position: absolute;
-    margin: 0;
-    bottom: 40%;
-    left: 5%;
-    font-size: 25px;
-    z-index: 1;
-    color: lightgray;
-}
+    .card {
+        min-height: 20rem;
+    }
 
     .card h1{
-        top: 60%;
+        bottom: 40%;
+        font-size: 5px;
     }
 
     .card:nth-child(3){
@@ -1151,7 +1132,7 @@ header ul a:hover{
     }
 
     .footer{
-        font-size: 5px;
+        font-size: 6px;
         text-align: center;
     }
 
@@ -1160,6 +1141,7 @@ header ul a:hover{
     }
 }
 
+/*MOBILE RESPONSIVE*/
 
 @media screen and (max-width: 480px) {
 
@@ -1192,7 +1174,7 @@ header ul a:hover{
     }
 
     .hero-info{
-        bottom: 15%;
+        bottom: 40%;
     }
 
     .hero-info h1{
@@ -1200,8 +1182,8 @@ header ul a:hover{
     }
 
     .scroll-down{
-        bottom: 15%;
-        left: 60%;
+        bottom: 10%;
+        left: 25%;
     }
 
     .section-title {
