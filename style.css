@@ -200,7 +200,6 @@ header ul a:hover{
     left: 49%;
     bottom: 8%;
     border-radius: 50px;
-    cursor: pointer;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.626);
   }
   .scroll-down::before,
@@ -248,7 +247,7 @@ header ul a:hover{
     align-items: center;
     flex-direction: column;
     width: 80%;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .section-title{
@@ -727,7 +726,7 @@ header ul a:hover{
     background-color: rgba(65, 86, 188, 0.195);
     z-index: 999;
     padding: 0 3rem;
-    font-size: x-small;
+    font-size: 8px;
 }
 
 
@@ -999,8 +998,6 @@ header ul a:hover{
         bottom: 0;
         left: 0;
         right:0;
-        margin-top: 50%;
-        
     }
     .hero-info{
         bottom: 5%;
@@ -1021,13 +1018,40 @@ header ul a:hover{
     }
 
 
+    .info-section{
+        margin-top: -70px;
+    }
 
     .info-cards{
         grid-template-columns: auto;
     }
 
+    .card{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    position: relative;
+    width: auto;
+    height: 70vh;
+    overflow: hidden;
+    border: 1px solid gray;
+    background-color: #5990d320;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.card h1{
+    position: absolute;
+    margin: 0;
+    bottom: 40%;
+    left: 5%;
+    font-size: 25px;
+    z-index: 1;
+    color: lightgray;
+}
+
     .card h1{
-        bottom: 50%;
+        top: 60%;
     }
 
     .card:nth-child(3){
@@ -1127,7 +1151,8 @@ header ul a:hover{
     }
 
     .footer{
-        font-size: 10px;
+        font-size: 5px;
+        text-align: center;
     }
 
     .social-box{
@@ -1239,14 +1264,4 @@ header ul a:hover{
     .footer .box-icons{
         gap: 10px;
     }
-
-
 }
-
-
-
-
-
-
-
-
