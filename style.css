@@ -402,6 +402,11 @@ header ul a:hover::after {
   width: 100%;
 }
 
+/* Make contact section container wider */
+.contact-section .section-container {
+  max-width: 1400px;
+}
+
 .section-title {
   font-family: "Fredoka", sans-serif;
   font-size: 2.5rem;
@@ -938,8 +943,10 @@ header ul a:hover::after {
 .contact-content {
   display: flex;
   justify-content: center;
-  max-width: 600px;
+  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .contact-info {
@@ -995,6 +1002,8 @@ header ul a:hover::after {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  width: 100%;
+  max-width: 800px;
 }
 
 .form-group {
@@ -1004,14 +1013,15 @@ header ul a:hover::after {
 
 .contact-form input,
 .contact-form textarea {
-  padding: 1.2rem;
+  padding: 1.5rem 1.8rem; /* Increased padding */
   border: 2px solid var(--light-coral);
   border-radius: 15px;
   font-family: "Quicksand", sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem; /* Slightly larger font */
   color: var(--brown-red);
   background: white;
   transition: all 0.3s ease;
+  width: 100%; /* Ensure full width */
 }
 
 .contact-form input:focus,
@@ -1022,7 +1032,11 @@ header ul a:hover::after {
 }
 
 .contact-form button {
-  align-self: flex-start;
+  align-self: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 1.2rem 3rem;
+  font-size: 1.1rem;
 }
 
 /* ==================== FOOTER ==================== */
